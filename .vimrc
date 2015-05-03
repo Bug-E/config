@@ -27,3 +27,17 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
+
+
+" Every Vim user likes to enable auto-indenting of source code, so Vim can intelligently position you cursor on the next line as you type. This has one big ugly consequence however: when you paste text into your terminal-based Vim with a right mouse click, Vim cannot know it is coming from a paste. To Vim, it looks like text entered by someone who can type incredibly fast :) Since Vim thinks this is regular key strokes, it applies all auto-indenting and auto-expansion of defined abbreviations to the input, resulting in often cascading indents of paragraphs.
+" There is an easy option to prevent this, however. You can temporarily switch to “paste mode”, simply by setting the following option:
+set pastetoggle=<F2>
+
+" Never press painful shift again for saving files
+nnoremap ; :
+
+
+" tell it to use an undo file
+set undofile
+" set a directory to store the undo history
+set undodir=/home/yourname/.vimundo/
