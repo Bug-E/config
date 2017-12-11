@@ -13,3 +13,5 @@ alias l='ls -l'
 alias la='ls -lahr'
 alias ll='ls -lrh'
 
+# https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
+source ~/.git/git-completion.bash

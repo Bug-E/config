@@ -6,3 +6,6 @@ awk -F\| -v OFS=',' 'gsub(/ /, "", $2);gsub(/ /, "", $3);gsub(/ /, "", $4); { pr
 
 ## Update the currently editing file in vim with sudo credentials
 :w ! sudo tee %
+
+df -hl
+du -d 2
