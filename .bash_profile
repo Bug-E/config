@@ -15,3 +15,5 @@ alias ll='ls -lrh'
 
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source ~/.git/git-completion.bash
+
+NODE_PATH=/usr/local/lib/node_modules   # for bower

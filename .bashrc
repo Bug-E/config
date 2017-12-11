@@ -14,3 +14,6 @@ xmodmap -e "keycode 66 = F12" -e 'clear Lock'
 
 # https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source ~/.git/git-completion.bash
+
+
+NODE_PATH=/usr/local/lib/node_modules   # for bower
