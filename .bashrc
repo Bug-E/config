@@ -3,8 +3,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 export WORKON_HOME=~/.vnvs
 
 alias grep="grep -i"
-alias la="ls -a"
-alias ll="ls -l"
+alias la="ls -aCF"
+alias ll="ls -altrF"
+alias l="ls -CF"
 
 # ssh agent for keeping ssh key pass cached
 eval "$(ssh-agent -s)"
