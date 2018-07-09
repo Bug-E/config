@@ -1,4 +1,4 @@
-execute pathogen#infect() 
+" execute pathogen#infect() 
 
 
 set nowrap        " don't wrap lines
@@ -40,4 +40,6 @@ nnoremap ; :
 " tell it to use an undo file
 set undofile
 " set a directory to store the undo history
-set undodir=/home/yourname/.vimundo/
+set undodir=/home/dheeraj/.vimundo/
+
+syntax on
