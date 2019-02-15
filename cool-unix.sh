@@ -9,3 +9,6 @@ awk -F\| -v OFS=',' 'gsub(/ /, "", $2);gsub(/ /, "", $3);gsub(/ /, "", $4); { pr
 
 df -hl
 du -d 2
+
+## use of xargs to use stdout as argument at a specific place
+cat * 2>/dev/null | grep 'request com' | grep -P '\d\d\d millis' | awk '{print $3}' | sed 's/\[//' | sed 's/\]//' | sed '/^$/d' | xargs -n1 -I % grep -- % *
