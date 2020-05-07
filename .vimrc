@@ -43,3 +43,6 @@ set undofile
 set undodir=/home/dheeraj/.vimundo/
 
 syntax on
+
+set ruler
+
