@@ -6,7 +6,7 @@ if [ ! -z "$gst" ]; then echo 'Current working directory has untracked changes';
 change=$1
 if [ -z "$change" ]; then echo 'first argument should be gerrit change number'; exit; fi
 echo "Getting the latest patchset"
-refCommand="git ls-remote origin changes/\*/$change/\* >&1 | grep -v /$change/meta | awk '{print \$2}' | sort | tail -n 1"
+refCommand="git ls-remote origin changes/\*/$change/\* >&1 | grep -v /$change/meta | awk '{print \$2}' | awk -F/ '{ print \$0, \$5 }' | sort -k 2 -n | awk '{print \$1}' | tail -n 1"
 echo "+$refCommand"
 ref=`eval $refCommand`
 echo "Latest patchset is $ref"
