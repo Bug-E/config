@@ -1,0 +1,19 @@
+#!/bin/bash
+#set -x
+#set -v
+gst=`git status --short | grep -v "\?"`
+if [ ! -z "$gst" ]; then echo 'Current working directory has untracked changes'; exit; fi
+change=$1
+if [ -z "$change" ]; then echo 'first argument should be gerrit change number'; exit; fi
+echo "Getting the latest patchset"
+refCommand="git ls-remote origin changes/\*/$change/\* >&1 | grep -v /$change/meta | awk '{print \$2}' | sort | tail -n 1"
+echo "+$refCommand"
+ref=`eval $refCommand`
+echo "Latest patchset is $ref"
+branch=`git branch --show-current`
+echo "Tagging current commit to gfc_o__${branch}"
+git tag --force "gfc_o__${branch}" # gerrit fetch change old
+echo "Fetching latest patchset"
+git fetch origin $ref
+echo "Updating curent branch reference to FETCH_HEAD"
+git reset --hard FETCH_HEAD
