@@ -1,0 +1,3 @@
+# https://superuser.com/questions/303602/how-can-i-view-more-of-my-history-in-screen-on-linux
+defscrollback 100000
+termcapinfo xterm ti@:te@
