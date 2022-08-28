@@ -6,7 +6,7 @@ alias grep="grep -i"
 alias la="ls -aCF"
 alias ll="ls -altrF"
 alias l="ls -CF"
-alias rsync="rsync -za --inplace --partial --progress"
+alias rsync="rsync -zau --inplace --partial --progress"
 
 # ssh agent for keeping ssh key pass cached
 eval "$(ssh-agent -s)"
