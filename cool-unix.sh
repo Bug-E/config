@@ -7,7 +7,7 @@ awk -F\| -v OFS=',' 'gsub(/ /, "", $2);gsub(/ /, "", $3);gsub(/ /, "", $4); { pr
 ## Update the currently editing file in vim with sudo credentials
 :w ! sudo tee %
 
-df -hl
+df -hl # file system
 du -d 2
 
 ## use of xargs to use stdout as argument at a specific place
