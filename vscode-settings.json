@@ -1,0 +1,42 @@
+{
+    "redhat.telemetry.enabled": false,
+    "sonarlint.connectedMode.connections.sonarqube": [
+        {
+            "serverUrl": "https://sonarqube-internal.phonepe.com",
+            "connectionId": "https-sonarqube-internal-phonepe-com"
+        }
+    ],
+    "maven.terminal.useJavaHome": true,
+    "editor.fontSize": 14,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-17",
+            "path": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home",
+            "default": true
+        }
+    ],
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.chat.editor.temporalContext.enabled": true,
+    "github.copilot.chat.generateTests.codeLens": true,
+    "chat.agent.maxRequests": 5,
+    "chat.agent.enabled": true,
+    "github.copilot.chat.agent.thinkingTool": true,
+    "github.copilot.chat.edits.temporalContext.enabled": true,
+    "github.copilot.selectedCompletionModel": "Cloude 3.7 Sonnet",
+    "github.copilot.chat.codesearch.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "java": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "jsonc": true
+    },
+    "github.copilot.chat.followUps": "always",
+    "git.confirmSync": false,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "java.server.launchMode": "Standard",
+    "workbench.colorTheme": "Visual Studio Dark",
+}
