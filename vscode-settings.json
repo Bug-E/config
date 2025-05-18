@@ -10,10 +10,10 @@
     "editor.fontSize": 14,
     "java.configuration.runtimes": [
         {
-            "name": "JavaSE-17",
-            "path": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home",
+            "name": "JavaSE-24",
+            "path": "/Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home",
             "default": true
-        }
+        } 
     ],
     "github.copilot.nextEditSuggestions.enabled": true,
     "github.copilot.chat.editor.temporalContext.enabled": true,
@@ -22,15 +22,15 @@
     "chat.agent.enabled": true,
     "github.copilot.chat.agent.thinkingTool": true,
     "github.copilot.chat.edits.temporalContext.enabled": true,
-    "github.copilot.selectedCompletionModel": "Cloude 3.7 Sonnet",
+    "github.copilot.selectedCompletionModel": "Gemini 2.5 Pro (Preview)",
     "github.copilot.chat.codesearch.enabled": true,
     "github.copilot.enable": {
-        "*": true,
-        "java": false,
+        "*": false,
         "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "jsonc": true
+        "java": false,
+        "jsonc": false
     },
     "github.copilot.chat.followUps": "always",
     "git.confirmSync": false,
@@ -38,5 +38,8 @@
         "editor.defaultFormatter": "redhat.java"
     },
     "java.server.launchMode": "Standard",
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "IntelliJ IDEA New UI Dark",
+    "git.blame.editorDecoration.enabled": true,
+    "sonarlint.output.showVerboseLogs": true,
+    "chat.mcp.discovery.enabled": true,
 }
