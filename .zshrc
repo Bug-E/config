@@ -15,7 +15,7 @@ alias dep='mvn dependency:tree'
 alias deptest='mvn test dependency:tree -DskipTests=true'
 export MAVEN_OPTS="-Dmaven.build.cache.enabled=true"
 export PATH="/opt/homebrew/opt/erlang@25/bin:$PATH"
-export JAVA_HOME=/opt/homebrew/Cellar/openjdk@17/17.0.14/libexec/openjdk.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
 alias javaHome="/usr/libexec/java_home -V"
 export PATH="$JAVA_HOME/bin:$PATH"
 ###### PROD SETUP ########
@@ -25,7 +25,7 @@ export PATH="$JAVA_HOME/bin:$PATH"
 export SSH_AUTH_SOCK=/Users/dheeraj.agarwal1/Library/Containers/com.maxgoedjen.Secretive.SecretAgent/Data/socket.ssh
 
 alias sshs="ssh -i ~/.ssh/ecdacert_mankuthima.pub"
-alias sshp="ssh -i /Users/dheeraj.agarwal1/.ssh/v2cert_new.pub"
+alias sshp="ssh -i /Users/dheeraj.agarwal1/.ssh/v2cert_may22.pub"
 #alias sshprsys="sshp dev@grw-rsysloggrowth001.phonepe.mhw"
 alias sshprsys="sshp dev@prd-common-rsyslog101.phonepe.al2"
 #alias sshpbackup="sshp dev@prd-t3backup102.phonepe.mh1"
@@ -33,6 +33,8 @@ alias sshpbackup="sshp dev@prd-logbackupviewer101.phonepe.al2"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export DISABLE_UPDATE_PROMPT=true
+export DISABLE_AUTO_UPDATE=true
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
